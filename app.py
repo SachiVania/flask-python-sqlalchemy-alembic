@@ -24,8 +24,8 @@ def getAllUsers():
 
 # get user by id
 @myapp.route('/users/<int:id>')
-def getUserById():
-    pass
+def getUserById(id):
+    return 
 
 # create user
 @myapp.route('/users')
@@ -34,12 +34,12 @@ def createUser():
 
 # update user
 @myapp.route('/users/<int:id>')
-def updateUser():
+def updateUser(id):
     pass
 
 # delete user
 @myapp.route('/users/<int:id>')
-def deleteUser():
+def deleteUser(id):
     pass
 
 if __name__ == '__main__':
