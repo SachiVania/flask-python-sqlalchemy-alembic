@@ -31,5 +31,12 @@ Note: it takes time to install the dependencies in WSL
 
 ### Run the app
 ```
+# To run the flask app on localhost and with default 5000 port
 $ python3 app.py
+or
+$ flask --app app run
+
+# To run the flask app on other port, accessible by other machines in the same network
+$ set FLASK_APP=app.py
+$ flask run --host=192.168.15.23 --port=5001
 ```
