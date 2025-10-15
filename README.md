@@ -28,3 +28,8 @@ $ pip install flask
 $ pip freeze > requirements.txt
 ```
 Note: it takes time to install the dependencies in WSL
+
+### Run the app
+```
+$ python3 app.py
+```
