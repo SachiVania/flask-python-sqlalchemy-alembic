@@ -3,6 +3,11 @@ from flask import Flask
 # __name__ means name of this module ('app'.py) i.e. 'app'
 myapp = Flask(__name__)
 
+# Binding URL and function together
+@myapp.route('/')
+def homepage():
+    return 'Welcome to the intial flask app!'
+
 if __name__ == '__main__':
     # run the app
     # to reload the app on code change, keep debug = True
