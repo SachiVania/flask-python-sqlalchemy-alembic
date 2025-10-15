@@ -18,27 +18,27 @@ profiles = [
 ]
 
 # get all users
-@myapp.route('/users')
+@myapp.route('/users', methods=['GET'])
 def getAllUsers():
     pass
 
 # get user by id
-@myapp.route('/users/<int:id>')
+@myapp.route('/users/<int:id>', methods=['GET'])
 def getUserById(id):
     return 
 
 # create user
-@myapp.route('/users')
+@myapp.route('/users', methods=['POST'])
 def createUser():
     pass
 
 # update user
-@myapp.route('/users/<int:id>')
+@myapp.route('/users/<int:id>', methods=['PUT'])
 def updateUser(id):
     pass
 
 # delete user
-@myapp.route('/users/<int:id>')
+@myapp.route('/users/<int:id>', methods=['DELETE'])
 def deleteUser(id):
     pass
 
